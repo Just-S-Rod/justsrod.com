@@ -30,7 +30,8 @@ h3{font:700 24px/1.15 var(--head);letter-spacing:.03em;margin:10px 0 6px}
 .hero{padding-top:48px}
 .player{padding:28px;max-width:760px}
 .player-head{display:flex;gap:18px;align-items:center;flex-wrap:wrap}
-.avatar{width:84px;height:84px;border-radius:16px;flex:none;background:linear-gradient(135deg,var(--cyan),var(--pink));display:grid;place-items:center;color:var(--bg);font:700 34px/1 var(--head)}
+.avatar{display:block;width:112px;height:112px;border-radius:16px;flex:none;padding:2px;background:linear-gradient(135deg,var(--cyan),var(--pink));box-shadow:0 0 18px rgba(34,228,240,.35),0 0 28px rgba(255,62,165,.25)}
+.avatar img{display:block;width:100%;height:100%;border-radius:14px;object-fit:cover}
 h1{font:700 clamp(40px,8vw,64px)/1 var(--head);letter-spacing:.06em;margin:8px 0 2px;color:var(--cyan);text-shadow:3px 3px 0 var(--pink)}
 .sub{margin:0;color:var(--muted);font:500 15px/1.4 var(--mono)}
 .pitch{font-size:18px;margin:20px 0 14px;max-width:62ch}
@@ -85,7 +86,7 @@ h1{font:700 clamp(40px,8vw,64px)/1 var(--head);letter-spacing:.06em;margin:8px 0
 @media (max-width:600px){
   .nav ul{gap:12px}
   .player{padding:20px}
-  .avatar{width:64px;height:64px;font-size:26px}
+  .avatar{width:88px;height:88px}
   .pitch{font-size:16px}
   h2{font-size:26px}
 }
