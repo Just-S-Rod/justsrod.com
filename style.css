@@ -15,9 +15,9 @@ html{scroll-behavior:smooth;scroll-padding-top:72px}
 
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
 
-body{margin:0;background:var(--bg);color:var(--text);font:400 16px/1.6 var(--body);
-  background-image:radial-gradient(800px 400px at 85% -10%,rgba(255,62,165,.10),transparent 60%),radial-gradient(700px 400px at -10%
-10%,rgba(34,228,240,.08),transparent 60%);}
+body{margin:0;background-color:var(--bg);color:var(--text);font:400 16px/1.6 var(--body);
+  background-image:linear-gradient(rgba(18,19,24,.78),rgba(18,19,24,.86)),url("img/hero-bg.jpg");
+  background-size:cover;background-position:center 18%;background-attachment:fixed;}
 
 a{color:var(--cyan)}
 
@@ -44,7 +44,7 @@ a:focus-visible,.btn:focus-visible{outline:2px solid var(--pink);outline-offset:
 
 .nav ul a:hover{color:var(--text)}
 
-.card{background:var(--surface);border:1px solid var(--line);border-radius:14px;box-shadow:0 0 18px rgba(34,228,240,.13)}
+.card{background:rgba(30,32,41,.88);backdrop-filter:blur(6px);border:1px solid var(--line);border-radius:14px;box-shadow:0 0 18px rgba(34,228,240,.13)}
 
 section.wrap{padding-top:64px}
 
@@ -53,9 +53,7 @@ h2{font:700 30px/1.1 var(--head);letter-spacing:.04em;text-transform:uppercase;m
 h3{font:700 24px/1.15 var(--head);letter-spacing:.03em;margin:10px 0 6px}
 
 
-section.hero{padding-top:96px;padding-bottom:120px;border-radius:18px;
-  background-image:linear-gradient(rgba(18,19,24,.35),rgba(18,19,24,.78) 65%,var(--bg)),url("img/hero-bg.jpg");
-  background-size:cover;background-position:center 22%;}
+section.hero{padding-top:48px;padding-bottom:56px}
 
 .player{padding:28px;max-width:800px;margin:0 auto;background:rgba(30,32,41,.80);backdrop-filter:blur(8px)}
 
@@ -193,7 +191,7 @@ var(--cyan);border-radius:4px;padding:5px 7px;margin-top:3px}
 
   section.wrap{padding-top:44px}
 
-  section.hero{padding-top:56px;padding-bottom:80px}
+  section.hero{padding-top:28px;padding-bottom:36px}
 
   h2{font-size:26px;margin-bottom:20px}
 
