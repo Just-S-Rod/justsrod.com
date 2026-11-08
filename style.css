@@ -32,17 +32,17 @@ a:focus-visible,.btn:focus-visible{outline:2px solid var(--pink);outline-offset:
 .label{font:700 12px/1 var(--mono);letter-spacing:.2em;text-transform:uppercase;color:var(--pink)}
 
 
-.topbar{position:sticky;top:0;z-index:5;background:rgba(18,19,24,.88);backdrop-filter:blur(8px);border-bottom:1px solid rgba(237,239,245,.08)}
+.topbar{position:sticky;top:0;z-index:5;background:rgba(18,19,24,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
 
 .nav{padding-top:8px;padding-bottom:8px;display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:56px;flex-wrap:wrap}
 
-.brand{font:700 22px/1 var(--head);letter-spacing:.08em;color:var(--cyan);text-decoration:none;text-shadow:2px 2px 0 var(--pink)}
+.brand{font:700 22px/1 var(--head);letter-spacing:.04em;color:var(--cyan);text-decoration:none;text-shadow:2px 2px 0 var(--pink)}
 
-.nav ul{display:flex;gap:18px;list-style:none;margin:0;padding:0;flex-wrap:wrap}
+.nav ul{display:flex;gap:10px;list-style:none;margin:0;padding:0;flex-wrap:wrap}
 
-.nav ul a{color:var(--muted);text-decoration:none;font:500 13px/1 var(--mono);letter-spacing:.04em}
+.nav ul a{display:inline-block;padding:8px 11px;border:1px solid rgba(237,239,245,.16);border-radius:8px;background:rgba(237,239,245,.04);color:var(--muted);text-decoration:none;font:500 13px/1 var(--mono);letter-spacing:.04em;transition:color .15s,border-color .15s,background .15s}
 
-.nav ul a:hover{color:var(--text)}
+.nav ul a:hover{color:var(--cyan);border-color:rgba(34,228,240,.5);background:rgba(34,228,240,.08)}
 
 .card{background:rgba(30,32,41,.88);backdrop-filter:blur(6px);border:1px solid var(--line);border-radius:14px;box-shadow:0 0 18px rgba(34,228,240,.13)}
 
@@ -169,9 +169,13 @@ var(--cyan);border-radius:4px;padding:5px 7px;margin-top:3px}
 
 @media (max-width:600px){
 
-  .nav{justify-content:center}
+  .nav{justify-content:flex-start;flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none}
 
-  .nav ul{gap:12px;justify-content:center}
+  .nav::-webkit-scrollbar{display:none}
+
+  .nav ul{gap:8px;flex-wrap:nowrap}
+
+  .nav ul a{font-size:12px;padding:7px 9px;white-space:nowrap}
 
   .label{font-size:11px;letter-spacing:.14em}
 
