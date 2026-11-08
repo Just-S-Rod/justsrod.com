@@ -36,7 +36,7 @@ a:focus-visible,.btn:focus-visible{outline:2px solid var(--pink);outline-offset:
 
 .nav{padding-top:8px;padding-bottom:8px;display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:56px;flex-wrap:wrap}
 
-.brand{font:700 22px/1 var(--head);letter-spacing:.04em;color:var(--cyan);text-decoration:none;text-shadow:2px 2px 0 var(--pink)}
+.brand{flex:none;white-space:nowrap;font:700 22px/1 var(--head);letter-spacing:.04em;color:var(--cyan);text-decoration:none;text-shadow:2px 2px 0 var(--pink)}
 
 .nav ul{display:flex;gap:10px;list-style:none;margin:0;padding:0;flex-wrap:wrap}
 
