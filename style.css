@@ -126,7 +126,7 @@ var(--body);transition:background .15s,color .15s}
 
 .covers figure{margin:0}
 
-.covers img{display:block;width:100%;aspect-ratio:420/548;object-fit:cover;object-position:top;border-radius:8px;border:1px solid rgba(237,239,245,.14);box-shadow:0 4px 16px rgba(0,0,0,.4);transition:transform .15s}
+.covers img{display:block;width:100%;height:auto;border-radius:8px;border:1px solid rgba(237,239,245,.14);box-shadow:0 4px 16px rgba(0,0,0,.4);transition:transform .15s}
 
 .covers li:hover img{transform:scale(1.03)}
 
